@@ -1,0 +1,549 @@
+<?xml version="1.0"?>
+
+<!--
+ * (C)Copyright 2000-2009 by Simplica Corporation; All rights reserved.
+ *
+ * This software is the confidential and proprietary information of Simplica Corporation. You shall only use it in
+ * accordance with the terms of the license agreement you entered into with Simplica. No warranties or guaranties
+ * of any kind either explicit or implied are given.
+ *
+-->
+
+<!DOCTYPE facelet-taglib PUBLIC
+		"-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN"
+		"http://java.sun.com/dtd/facelet-taglib_1_0.dtd">
+
+<facelet-taglib>
+
+	<namespace>http://www.simplica.com/jsf/ecruiser</namespace>
+
+	<tag>
+		<tag-name>chart</tag-name>
+		<component>
+			<component-type>ecruiser.component.Chart</component-type>
+			<renderer-type>Chart</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>roundeddiv</tag-name>
+		<component>
+			<component-type>ecruiser.component.RoundedDiv</component-type>
+			<renderer-type>RoundedDiv</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>dateinput</tag-name>
+		<component>
+			<component-type>ecruiser.component.DateInput</component-type>
+			<renderer-type>DateInput</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>timeinput</tag-name>
+		<component>
+			<component-type>ecruiser.component.TimeInput</component-type>
+			<renderer-type>TimeInput</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>window</tag-name>
+		<component>
+			<component-type>ecruiser.component.Window</component-type>
+			<renderer-type>Window</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>span</tag-name>
+		<component>
+			<component-type>ecruiser.component.Span</component-type>
+			<renderer-type>Span</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>popupInput</tag-name>
+		<component>
+			<component-type>ecruiser.component.PopupInput</component-type>
+			<renderer-type>PopupInput</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>lookupinput</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.lookup.LookupInput</component-type>
+			<renderer-type>LookupInput</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>gridTd</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.datatable.GridCell</component-type>
+			<renderer-type>GridCell</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>ajaxstatus</tag-name>
+		<component>
+			<component-type>ecruiser.component.AjaxStatus</component-type>
+			<renderer-type>AjaxStatus</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>menucell</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.menu.MenuCell</component-type>
+			<renderer-type>MenuCell</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>inlineEditor</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.richeditor.InlineEditor</component-type>
+			<renderer-type>InlineEditor</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>gridtable</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.datatable.GridTable</component-type>
+			<renderer-type>GridTable</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>backNextControl</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.datatable.BackNextControl</component-type>
+			<renderer-type>Table</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>div</tag-name>
+		<component>
+			<component-type>ecruiser.component.Div</component-type>
+			<renderer-type>Div</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>dataTr</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.datatable.DataRow</component-type>
+			<renderer-type>DataRow</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>tabpane</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.tab.TabPane</component-type>
+			<renderer-type>TabPane</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>dbimg</tag-name>
+		<component>
+			<component-type>ecruiser.component.DBImage</component-type>
+			<renderer-type>DBImage</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>editableDiv</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.richeditor.EditableDiv</component-type>
+			<renderer-type>EditableDiv</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>downloader</tag-name>
+		<component>
+			<component-type>ecruiser.component.Downloader</component-type>
+			<renderer-type>Downloader</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>radio</tag-name>
+		<component>
+			<component-type>ecruiser.component.Radio</component-type>
+			<renderer-type>Radio</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>table</tag-name>
+		<component>
+			<component-type>ecruiser.component.Table</component-type>
+			<renderer-type>Table</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>separator</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.menu.MenuSeparator</component-type>
+			<renderer-type>MenuSeparator</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>calendar</tag-name>
+		<component>
+			<component-type>ecruiser.component.Calendar</component-type>
+			<renderer-type>Calendar</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>layoutpane</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.layoutpane.LayoutPane</component-type>
+			<renderer-type>LayoutPane</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>select</tag-name>
+		<component>
+			<component-type>ecruiser.component.Select</component-type>
+			<renderer-type>Select</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>textarea</tag-name>
+		<component>
+			<component-type>ecruiser.component.TextArea</component-type>
+			<renderer-type>TextArea</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>insert</tag-name>
+		<component>
+			<component-type>ecruiser.view.template.Insert</component-type>
+			<renderer-type>Insert</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>tabcontrol</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.tab.TabControl</component-type>
+			<renderer-type>TabControl</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>chart2</tag-name>
+		<component>
+			<component-type>ecruiser.component.Chart2</component-type>
+			<renderer-type>Chart2</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>file</tag-name>
+		<component>
+			<component-type>ecruiser.component.FileInput</component-type>
+			<renderer-type>FileInput</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>form</tag-name>
+		<component>
+			<component-type>ecruiser.component.Form</component-type>
+			<renderer-type>Form</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>fileUpload</tag-name>
+		<component>
+			<component-type>ecruiser.component.FileUpload</component-type>
+			<renderer-type>FileUpload</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>input</tag-name>
+		<component>
+			<component-type>ecruiser.component.Input</component-type>
+			<renderer-type>Input</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>td</tag-name>
+		<component>
+			<component-type>ecruiser.component.TableCell</component-type>
+			<renderer-type>TableCell</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>combobox</tag-name>
+		<component>
+			<component-type>ecruiser.component.ComboBox</component-type>
+			<renderer-type>ComboBox</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>multipane</tag-name>
+		<component>
+			<component-type>ecruiser.component.MultiPane</component-type>
+			<renderer-type>MultiPane</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>include</tag-name>
+		<component>
+			<component-type>ecruiser.component.Include</component-type>
+			<renderer-type>Include</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>img</tag-name>
+		<component>
+			<component-type>ecruiser.component.Image</component-type>
+			<renderer-type>Image</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>button</tag-name>
+		<component>
+			<component-type>ecruiser.component.Button</component-type>
+			<renderer-type>Button</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>tab</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.tab.Tab</component-type>
+			<renderer-type>Tab</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>fieldLayout</tag-name>
+		<component>
+			<component-type>ecruiser.component.FieldLayout</component-type>
+			<renderer-type>FieldLayout</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>popupmenu</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.menu.PopupMenu</component-type>
+			<renderer-type>PopupMenu</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>imageButton</tag-name>
+		<component>
+			<component-type>ecruiser.component.ImageButton</component-type>
+			<renderer-type>ImageButton</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>iconInput</tag-name>
+		<component>
+			<component-type>ecruiser.component.IconInput</component-type>
+			<renderer-type>IconInput</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>suggestInput</tag-name>
+		<component>
+			<component-type>ecruiser.component.SuggestInput</component-type>
+			<renderer-type>SuggestInput</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>tree</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.tree.Tree</component-type>
+			<renderer-type>Tree</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>label</tag-name>
+		<component>
+			<component-type>ecruiser.component.FieldLabel</component-type>
+			<renderer-type>FieldLabel</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>widget</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.dashboard.Widget</component-type>
+			<renderer-type>Widget</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>datatable</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.datatable.DataTable</component-type>
+			<renderer-type>DataTable</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>slider</tag-name>
+		<component>
+			<component-type>ecruiser.component.Slider</component-type>
+			<renderer-type>Slider</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>numberinput</tag-name>
+		<component>
+			<component-type>ecruiser.component.NumberInput</component-type>
+			<renderer-type>NumberInput</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>tr</tag-name>
+		<component>
+			<component-type>ecruiser.component.TableRow</component-type>
+			<renderer-type>TableRow</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>pageNumberControl</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.datatable.PageNumberControl</component-type>
+			<renderer-type>PageNumberControl</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>dataTd</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.datatable.DataCell</component-type>
+			<renderer-type>DataCell</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>layoutTable</tag-name>
+		<component>
+			<component-type>ecruiser.component.LayoutTable</component-type>
+			<renderer-type>LayoutTable</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>headerTd</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.datatable.HeaderCell</component-type>
+			<renderer-type>HeaderCell</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>treecell</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.tree.TreeCell</component-type>
+			<renderer-type>TreeCell</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>menubar</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.menu.MenuBar</component-type>
+			<renderer-type>MenuBar</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>a</tag-name>
+		<component>
+			<component-type>ecruiser.component.Anchor</component-type>
+			<renderer-type>Anchor</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>popup</tag-name>
+		<component>
+			<component-type>ecruiser.component.Popup</component-type>
+			<renderer-type>Popup</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>poller</tag-name>
+		<component>
+			<component-type>ecruiser.component.Poller</component-type>
+			<renderer-type>Poller</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>dashboard</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.dashboard.Dashboard</component-type>
+			<renderer-type>Dashboard</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>selecttable</tag-name>
+		<component>
+			<component-type>ecruiser.advanced.datatable.SelectTable</component-type>
+			<renderer-type>SelectTable</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>byteimg</tag-name>
+		<component>
+			<component-type>ecruiser.component.ByteArrayImage</component-type>
+			<renderer-type>ByteArrayImage</renderer-type>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>checkbox</tag-name>
+		<component>
+			<component-type>ecruiser.component.Checkbox</component-type>
+			<renderer-type>Checkbox</renderer-type>
+		</component>
+	</tag>
+
+
+</facelet-taglib>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ec-config>
+
+  <datasources>
+    <datasource-manager>labware.web.control.LIMSDataSourceManager</datasource-manager>
+  </datasources>
+
+  <javascript>
+    <enable-logging>false</enable-logging>
+    <show-server-errors>false</show-server-errors>
+    <popup-server-errors>false</popup-server-errors>
+    <ajax-timeout>300000</ajax-timeout>
+  </javascript>
+
+  <log-frame>
+    <level>0</level>
+  </log-frame>
+
+  <file-upload>
+    <max-file-size>50</max-file-size>
+  </file-upload>
+
+  <file-download>
+    <popup-window-timetoclose>60000</popup-window-timetoclose>
+  </file-download>
+
+
+  <secure-url-root>NONE</secure-url-root>
+
+  <view>
+    <http-get-restore>true</http-get-restore>
+  </view>
+
+  <task-toolbar-options>
+    <show-image>true</show-image>
+    <show-text>false</show-text>
+  </task-toolbar-options>
+
+  <jwt-key>MbWVtYmVyVmFsdWVzdAAPTGphdmE</jwt-key>
+
+</ec-config>

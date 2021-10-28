@@ -1,0 +1,51 @@
+/* Icon input styles  */
+
+.iconinput {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle;
+	background: #fff;
+    height: 1.6em;
+}
+
+.iconinput-input {
+    width: 143px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0 22px 0 .4em;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #222222; /* Making the text color #222222 : fixing AH198SW */
+}
+
+.iconinput-button {
+    width: 16px;
+    font-size: .5em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    cursor: default;
+    display: block;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.iconinput a.iconinput-button {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+/* more specificity required here to overide default borders */
+.iconinput .ui-icon {
+    position: absolute;
+    margin-top: -8px;
+    top: 50%;
+    left: 0;
+}

@@ -1,0 +1,54 @@
+##
+## Velocity Template for SAML 2 HTTP-POST binding
+##
+## Velocity context may contain the following properties
+## action - String - the action URL for the form
+## RelayState - String - the relay state for the message
+## SAMLRequest - String - the Base64 encoded SAML Request
+## SAMLResponse - String - the Base64 encoded SAML Response
+##
+## @Author : Vishwanath Washimkar
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to LabWare 8 : SAML2 Post Binding</title>
+  <link id="favicon" rel="shortcut icon" href="img/LabWare.ico"/>
+  <link rel="stylesheet" type="text/css" href="common/css/lw-theme/jquery-ui-1.12.1.custom.css">
+  <link rel="stylesheet" type="text/css" href="common/css/labware.css">
+  <link rel="stylesheet" type="text/css" href="common/css/login.css">
+</head>
+<body id="login-bg" onload="document.forms[0].submit()">
+
+<a href="http://www.labware.com" target="_blank" rel="noopener noreferrer"><img src="img/labware-logo.png" alt="LabWare Logo" id="login-logo" border="0"/></a>
+
+<div id="sso-pane">
+  <div id="sso-form-bg">
+    <noscript>
+      <p>
+        <strong>Note:</strong> Since your browser does not support JavaScript, you must press the Continue button once to proceed.
+      </p>
+    </noscript>
+    <form id="loginForm" onsubmit="false" method="post" action="${action}">
+      <p class="login-title" style="padding-bottom: 5px;">LabWare 8 Single Sign On Login Page</p>
+
+      <div id="login" style="text-align:center;">
+        #if($RelayState)<input type="hidden" name="RelayState" value="${RelayState}"/>#end
+        #if($SAMLRequest)<input type="hidden" name="SAMLRequest" value="${SAMLRequest}"/>#end
+        #if($SAMLResponse)<input type="hidden" name="SAMLResponse" value="${SAMLResponse}"/>#end
+        <table cellspacing="0" cellpadding="3" border="1" style="width: 100%; padding: 20px 40px 20px 0;">
+          <tr>
+            <td>&nbsp;</td>
+            <td valign="top" style="text-align:center;">&nbsp;
+              <noscript>
+                <div><input type="button" id="logButton" class="btn btn-blue" style="margin-left: 8px; padding:8px 10px 8px 10px;font-size:1.0em;min-width:56px;" value="Continue"/>
+                </div>
+              </noscript>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

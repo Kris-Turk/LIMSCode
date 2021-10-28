@@ -1,0 +1,201 @@
+.dataTablePageLink {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: #484848;
+    padding: 3px;
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: yellow;
+}
+
+.dataTablePageLink-current {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: yellow;
+}
+
+.dataTablePageLink a {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.dataTablePageLink a:visited {
+    text-decoration: none;
+}
+
+.dataTablePageLink a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+
+.dataTableBackNext {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: lightgray;
+}
+
+.dataTableBackNext td {
+    padding: 3px;
+}
+
+.dataTableBackNext img {
+    border-style: none;
+}
+
+.dataTable {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b0b0b0;
+}
+
+.dataTableInner {
+}
+
+.dataTableCell {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333
+}
+
+.dataTableHeader {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: yellow;
+    background-color: #888888;
+    white-space: nowrap;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.dataTableHeader img {
+    border-style: none;
+}
+
+.dataTableHeader a {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.dataTableHeader a:visited {
+    text-decoration: none;
+}
+
+.dataTableHeader a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.dataTableEven {
+    color: #000000;
+    background: #ffffff; /*font-weight: bold;*/
+}
+
+.dataTableOdd {
+    color: #000000;
+    background: #ecf3fb; /*font-weight: bold;*/
+}
+
+.head {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+td {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.dataTableHeader TD {
+    vertical-align: middle;
+    background-color: #777777;
+    /*border-width: 1px;*/
+    /*border-color: white;*/
+    /*border-left-style: solid;*/
+    /*border-right-style: hidden;*/
+}
+
+.dataTableTop TD {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.dataTableTop {
+    height: 24px;
+    background-color: #0336a9;
+}
+
+.dataTableBottom {
+    height: 24px;
+    background-color: #639bce;
+    color: #ffffff;
+}
+
+.dataTableBottom TD {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.dataTableBottom a {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.dataTableBottom a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+
+.dataTableTooltip {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+
+    background-color: infobackground;
+    color: infotext;
+
+    padding: 1px 1px 1px 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.dataTableMain {
+background-color:#fff
+}
+
+.dataTableMain > td {
+height:100%
+}
+

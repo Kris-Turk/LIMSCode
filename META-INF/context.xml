@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!-- The contents of this file will be loaded for each web application -->
+<Context>
+
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+    <!--
+    <Manager pathname="" />
+    -->
+
+    <!-- Uncomment this to enable Comet connection tacking (provides events
+         on session expiration as well as webapp lifecycle) -->
+    <!--
+    <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
+    -->
+	
+	<!--SETTING UP THE DB USER NAME AND PWD		
+		NON ENCRYPTED - ok for local and demo systems - 2 lines like this:
+			username="postgres"
+			password="mydbpassword"	
+			
+		ENCRYPTED - required for customer systems - 3 lines like this:
+			username="postgres"
+			password="99-129-191-190-59-169-109-190-99-190-69-9-49-298-190-195"
+			factory="labware.addon.LabWareCustomBasicDataSourceFactory"
+			
+		ENCRYPTED DATABASE PASSWORD SETUP - See LW8 install manual:
+			1 - copy the labware-addon.jar to the main tomcat application \lib folder
+			2 - encrypt password in the admin console and paste the value below
+			3 - note factory = line must also be present below so the system can decrypt
+		
+		you can start out with the password in clear text only line non encrypted, then encrypt it in the admin console, then use the encrypted lines
+		refer to LabWare KnowledgeTrack for your database for more information on setting up driverClassName and url
+	-->
+	<Resource 
+		name="jdbc/LABWARE_PSV6_1"
+		auth="Container"
+		type="javax.sql.DataSource"
+		username="${lwuser}"
+		password="${lwpass}"
+		driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+		url="${lwdb}"
+		validationQuery="SELECT COUNT(*) FROM CONFIG_SYS"
+	/>
+
+		
+    <Environment name="LABWARE_LOG_LEVEL" value="WARN" type="java.lang.String"/> <!--Acceptable values: OFF, WARN, INFO, DEBUG, ALL-->
+    <Environment name="LABWARE_LOG_DIRPATH" value="c:\webtemp" type="java.lang.String"/> <!--Path for the weblims_error/weblims_debug files-->
+
+    <Environment name="LABWARE_LOG_SOAP" value="FALSE" type="java.lang.Boolean"/> <!--Acceptable values: TRUE, FALSE-->
+    <Environment name="LABWARE_SOAP_DIRPATH" value="c:\soap" type="java.lang.String"/> <!--Path for SOAP log files files-->
+    <Environment name="LABWARE_SOAP_FILE_THRESHOLD" value="10000" type="java.lang.Integer"/> <!--SOAP log file threshold before logging is disabled -->
+
+	<!-- Uncomment this line if Test Web Service URL should be different than the application URL -->
+	<!--
+    <Environment name="LABWARE_WS_REMOTE_URL" value="http://127.0.0.1:8080/LabWare-8/" type="java.lang.String"/>
+	-->
+	
+    <Environment name="LABWARE_WS_SECURITY" value="FALSE" type="java.lang.Boolean"/> <!--Acceptable values: TRUE, FALSE-->
+
+	<!-- Uncomment these lines if supplying appropriate SMTP parameters -->
+	<!--
+    <Environment name="LABWARE_LOG_EMAIL_ENABLE" type="java.lang.Boolean" value="FALSE"/>
+    <Environment name="LABWARE_LOG_EMAIL_SMTP_HOST" type="java.lang.String" value="smtp.gmail.com"/>
+    <Environment name="LABWARE_LOG_EMAIL_SMTP_PORT" type="java.lang.Integer" value="465"/>
+	<Environment name="LABWARE_LOG_EMAIL_SMTP_PROTOCOL" type="java.lang.String" value="SMTPS"/>
+    <Environment name="LABWARE_LOG_EMAIL_FROM_ADDR" type="java.lang.String" value="labwaretestemail@gmail.com" />
+    <Environment name="LABWARE_LOG_EMAIL_TO_ADDR" type="java.lang.String" value="labwaretestemail@gmail.com" />
+    <Environment name="LABWARE_LOG_EMAIL_SMTP_USER" type="java.lang.String" value="labwaretestemail@gmail.com" />
+    <Environment name="LABWARE_LOG_EMAIL_SMTP_PWD" type="java.lang.String" value="mySuperSecretPassword" />
+	-->
+	
+	<Environment name="LABWARE_DISABLE_ADMIN_AUTH" type="java.lang.Boolean" value="TRUE"/> <!--Acceptable values: TRUE, FALSE-->
+	<Environment name="LABWARE_DEBUG_MODE" value="FALSE" type="java.lang.Boolean"/> <!--Acceptable values: TRUE, FALSE-->
+	
+</Context>

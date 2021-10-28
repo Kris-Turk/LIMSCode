@@ -1,0 +1,120 @@
+
+.qq-uploader {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.qq-upload-toolbar{
+    margin: 10px 0 10px 0;
+}
+
+.qq-upload-toolbar button{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.qq-upload-button {
+    border-width: 2px;
+    border-style: outset;
+    padding: 1px 5px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.qq-upload-button-hover {
+    background: none repeat scroll 0 0 #f2fbfd;
+}
+.qq-upload-button-focus {
+    outline: 1px dotted #000000;
+}
+.qq-upload-drop-area, .qq-upload-extra-drop-area {
+    background: none repeat scroll 0 0 #eee;
+    border:1px solid #bbb;
+    height: 75px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.qq-upload-drop-area span {
+    font-size: 16px;
+    line-height: 75px;
+}
+.qq-upload-extra-drop-area {
+}
+.qq-upload-drop-area-active {
+    background: none repeat scroll 0 0 #DAF1FF;
+}
+
+.qq-upload-list {
+    width: 100%;
+}
+
+.qq-upload-list-content {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.qq-upload-list-content tr {
+    background-color: #FCF8E3;
+    font-size: 16px;
+    line-height: 15px;
+    margin: 0;
+    padding: 9px;
+}
+
+.qq-upload-list-content td {
+    vertical-align: middle;
+}
+
+.qq-upload-file, .qq-upload-spinner, .qq-upload-size, .qq-upload-cancel, .qq-upload-failed-text, .qq-upload-finished {
+    margin-right: 12px;
+}
+.qq-upload-file {
+}
+.qq-upload-spinner {
+    background: url("../images/loading.gif") repeat scroll 0 0 transparent;
+    display: none;
+    height: 15px;
+    vertical-align: text-bottom;
+    width: 15px;
+}
+.qq-upload-finished {
+    display: none;
+}
+.qq-upload-size, .qq-upload-cancel, .qq-upload-delete {
+    font-size: 12px;
+    font-weight: normal;
+}
+.qq-upload-failed-text {
+    display: none;
+    font-style: italic;
+    font-weight: bold;
+    color: #B94A48;
+}
+.qq-upload-fail .qq-upload-failed-text {
+    display: inline;
+}
+.qq-upload-list tr.qq-upload-success {
+    background-color: #DFF0D8;
+    color: #FFFFFF;
+}
+.qq-upload-list tr.qq-upload-fail {
+    background-color: #F2DEDE;
+    color: #FFFFFF;
+}
+
+.qq-progress {
+    width: 150px;
+}
+
+.qq-progress-bar {
+    background: linear-gradient(to bottom, #1E5799 0%, #2989D8 50%, #207CCA 51%, #7DB9E8 100%) repeat scroll 0 0 transparent;
+    border-radius: 6px 6px 6px 6px;
+    display: none;
+    height: 15px;
+    margin-bottom: 3px;
+    width: 0;
+}
